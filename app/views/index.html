@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+{{title}}
+</title>
+
+</head>
+<body>
+{% for message in message %}
+{{message}}
+{% endfor %}
+	<br/>
+	<a href="/posts">View Posts</a>
+
+<div class="sch">
+<form action="/signup" method="post">
+<fieldset>
+<legend>New User? Sign up here</legend>
+Name  : <br/>
+<input type="text" maxlength="40" value="" >
+<br/>
+Enrollment Number :<br/>
+<input type="text" maxlength="10" value="">
+<br/>
+Username : <br/>
+<input type="text" id="username" name="username" value=" " maxlength="20" >
+<br/>
+Password : <br/>
+<input type="password" id="password" name="password" value="" maxlength="20" >
+<input type="submit" value="Sign Up" >
+</fieldset>
+</form>
+</div>
+<div class="col">
+<form action="/user" method="post">
+<fieldset>
+<legend>
+	Login Here
+</legend>
+Username<br/>
+<input type="text" id="username" name="username" value=" " maxlength="20" />
+<br/>
+Password <br/>
+<input type="password" id="password" name="password" value="" maxlength="20" />
+<input type="submit" value="Login" />
+</fieldset>
+</form>
+</div>
+<div class="mid">
+</div>
+</body>
+</html>
